@@ -1,5 +1,7 @@
 import 'package:alert_dialouge/alert.dart';
+import 'package:alert_dialouge/flexproperty.dart';
 import 'package:alert_dialouge/home.dart';
+import 'package:alert_dialouge/listviwbuild.dart';
 import 'package:alert_dialouge/text.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +29,13 @@ class _MyAppState extends State<MyApp> {
         home: Scaffold(
           body: PageView(
             controller: _controller,
-            children: [CustomAlert(), Alert(), Ajaira()],
+            children: [
+              CustomAlert(),
+              Alert(),
+              Ajaira(),
+              FlexProperty(),
+              ListViewBuild(),
+            ],
           ),
         ));
   }
