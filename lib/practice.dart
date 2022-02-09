@@ -69,15 +69,22 @@ class Practice extends StatelessWidget {
                     builder: (context) {
                       return AlertDialog(
                           title: Text("Tawhid"),
-                          content: ListView.builder(
-                            itemCount: _alert.length,
-                            itemBuilder: (context, index) {
-                              return Column(
-                                children: [
-                                  Text(_alert[index]),
-                                ],
-                              );
-                            },
+                          content: Column(
+                            children: [
+                              Text("Bangladesh"),
+                              Expanded(
+                                child: ListView.builder(
+                                  itemCount: _alert.length,
+                                  itemBuilder: (context, index) {
+                                    return Column(
+                                      children: [
+                                        Text(_alert[index]),
+                                      ],
+                                    );
+                                  },
+                                ),
+                              ),
+                            ],
                           ));
                     });
               },
